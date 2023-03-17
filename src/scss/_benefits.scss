@@ -1,0 +1,192 @@
+.benefits {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: #f4f4f4;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__title {
+    margin-bottom: 36px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.042;
+    text-align: center;
+    color: #8d81ac;
+  }
+
+  &__list {
+    order: -1;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 135px auto;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      margin-bottom: 22px;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(1) {
+      &::before {
+        width: 111px;
+        height: 64px;
+        background-image: url("../images/benefits/date.png");
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        width: 90px;
+        height: 80px;
+        background-image: url("../images/benefits/sun.png");
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        width: 60px;
+        height: 84px;
+        background-image: url("../images/benefits/tube.png");
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        width: 71px;
+        height: 71px;
+        background-image: url("../images/benefits/clock.png");
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+  }
+
+  &__heading {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #323232;
+    line-height: 1.313;
+  }
+
+  &__text {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #848e97;
+    letter-spacing: 0;
+  }
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-left: auto;
+    bottom: 43px;
+    width: 100%;
+    max-width: 560px;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    padding-top: 61px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      font-size: 42px;
+      line-height: 1.048;
+    }
+
+    &__list {
+      margin-bottom: 73px;
+      order: unset;
+    }
+
+    &__item {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 700px;
+    }
+
+    &__heading {
+      margin-bottom: 0;
+    }
+
+    &__img {
+      position: static;
+      bottom: 20px;
+    }
+
+    &__pic {
+      margin-left: auto;
+    }
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    padding-top: 32px;
+    background-color: transparent;
+    &__container {
+      position: relative;
+      display: block;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 1.188;
+    }
+
+    &__list {
+      margin-bottom: 58px;
+    }
+
+    &__item {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 37px;
+      }
+
+      &::before {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+
+    &__box {
+      display: block;
+      text-align: center;
+    }
+
+    &__heading {
+      margin-bottom: 14px;
+      line-height: 1;
+    }
+
+    &__text {
+      width: 277px;
+    }
+  }
+}

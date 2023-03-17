@@ -1,0 +1,159 @@
+  .header {
+    background-image: url(../images/head/hero-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 30px;
+    }
+
+    .logo-svg {
+      margin-right: 18px;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      white-space: nowrap;
+      list-style: none;
+      margin-left: auto;
+      margin-right: 48px;
+    }
+
+    &__link {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 17px;
+      color: $header-main-color;
+      transition: color 0.5s;
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    @media screen and (max-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+
+      &__nav {
+        background-color: #27262a;
+        height: 118px;
+        padding-top: 22px;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+      }
+      &__list {
+        position: absolute;
+        top: 85px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: $mobile-width) {
+      &__nav {
+        min-width: 100%;
+        height: 102px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &__list {
+        display: none;
+      }
+
+      &__item {
+        border-bottom: 3px solid #3b3b3b;
+        position: relative;
+      }
+
+      &__link {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 26px;
+        border-left: 8px solid transparent;
+        color: #fff;
+        width: 100%;
+        padding: 29px 35px;
+        display: block;
+        &:hover {
+          color: $header-main-color;
+        }
+      }
+
+      &__link:hover::after {
+        content: "";
+        width: 8px;
+        height: 53px;
+        background-color: $header-main-color;
+        position: absolute;
+        left: 2px;
+        top: 19px;
+      }
+
+      &__btn {
+        width: 118px;
+      }
+
+      .logo-forkio {
+        display: none;
+      }
+    }
+  }
+
+  .nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $header-main-color;
+    transition: all 0.5s;
+    position: relative;
+
+    &:hover {
+      color: #fff;
+      .logo-hover {
+        opacity: 1;
+      }
+    }
+
+    .logo-hover {
+      opacity: 0;
+      transition: 0.5s;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    .menu-btn {
+      display: flex;
+    }
+
+    .menu-open {
+      display: block;
+      position: absolute;
+      top: 102px;
+      background-color: #333;
+      padding-bottom: 14px;
+      width: 95%;
+      z-index: 1;
+    }
+  }

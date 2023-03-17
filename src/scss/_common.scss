@@ -1,0 +1,41 @@
+body {
+  font-family: "Montserrat";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  @media screen and (max-width: $tablet-width) {
+    .container {
+      padding: 0 15px;
+      min-width: calc($mobile-width + 1px);
+    }
+  }
+  @media screen and (max-width: $mobile-width) {
+    .container {
+      padding: 0 10px;
+      min-width: 320px;
+    }
+  }
+}
+
+.section__title {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.048;
+  text-align: center;
+  color: #ffffff;
+  text-transform: capitalize;
+
+  @media screen and (max-width: $tablet-width) {
+    font-size: 42px;
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    font-size: 36px;
+    line-height: 1.333;
+  }
+}

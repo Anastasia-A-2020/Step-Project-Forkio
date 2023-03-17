@@ -1,0 +1,90 @@
+.about-fork {
+  background: linear-gradient(#4a3b4e, #4c3a4e);
+  background-image: url(../images/people-about-fork/testimonials-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #4a3b4e;
+  padding-top: 108px;
+  &__list {
+    margin-top: 82px;
+    margin-bottom: 118px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    column-gap: 65px;
+    row-gap: 110px;
+  }
+  &__item {
+    max-width: 354px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+  }
+  &__img {
+    grid-row: 1;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  &__text {
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+  }
+  &__lower-text {
+    padding: 0 132px 18px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #a291a5;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      background-color: #645766;
+      height: 2px;
+      width: 65%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  @media screen and (max-width: $tablet-width) {
+    padding-top: 86px;
+    .section-title {
+      font-size: 42px;
+      line-height: 44px;
+    }
+
+    &__list {
+      gap: 62px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__lower-text {
+      padding: 0 36px 18px;
+    }
+  }
+  @media screen and (max-width: $mobile-width) {
+    padding-top: 56px;
+    &__list {
+      gap: 62px;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      margin-bottom: 35px;
+    }
+    &__lower-text {
+      padding: 0 34px 15px;
+      margin-top: 0;
+    }
+  }
+}
