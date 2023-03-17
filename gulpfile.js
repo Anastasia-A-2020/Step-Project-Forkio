@@ -20,7 +20,7 @@ const path = {
     dest: `${distPath}js/`,
   },
   html: {
-    src: `${srcPath}index.html`,
+    src: `index.html`,
     dest: distPath,
   },
   img: {
