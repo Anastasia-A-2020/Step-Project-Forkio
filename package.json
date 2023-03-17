@@ -1,20 +1,9 @@
 {
   "name": "step-project-forkio",
   "version": "1.0.0",
-  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "description": "Склад учасників проекту: \r   Анастасія Александрова\r   Тетяна Пономарьова:",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Anastasia-A-2020/Step-Project-Forkio.git"
-  },
-  "author": "Anastasiia Aleksandrova, Tetiana Dimova",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Anastasia-A-2020/Step-Project-Forkio/issues"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.28.1",
     "del": "^6.1.1",
@@ -28,5 +17,17 @@
     "gulp-uglify": "^3.0.2",
     "sass": "^1.58.3"
   },
-  "homepage": "https://gitlab.com/Anastasiia-2/step-project-forkio#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anastasia-A-2020/Step-Project-Forkio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anastasia-A-2020/Step-Project-Forkio/issues"
+  },
+  "homepage": "https://github.com/Anastasia-A-2020/Step-Project-Forkio#readme"
 }
