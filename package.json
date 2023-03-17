@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/Anastasiia-2/step-project-forkio.git"
+    "url": "git+https://github.com/Anastasia-A-2020/Step-Project-Forkio.git"
   },
   "author": "Anastasiia Aleksandrova, Tetiana Dimova",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/Anastasiia-2/step-project-forkio/issues"
+    "url": "https://github.com/Anastasia-A-2020/Step-Project-Forkio/issues"
   },
   "devDependencies": {
     "browser-sync": "^2.28.1",
