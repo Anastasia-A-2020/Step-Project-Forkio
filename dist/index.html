@@ -10,15 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
   </head>
   <body>
     <header class="header">
       <nav class="header__nav container">
         <a href="#" class="nav__logo"
-          ><img src="./images/head/logo.png" alt="logo-pen" class="logo-svg" />
+          ><img
+            src="./dist/images/head/logo.png"
+            alt="logo-pen"
+            class="logo-svg"
+          />
           <img
-            src="./images/head/logo-hover.png"
+            src="./dist/images/head/logo-hover.png"
             alt="logo-hover"
             class="logo-hover"
           />
@@ -26,16 +30,16 @@
         >
         <ul class="header__list">
           <li class="header__item">
-            <a href="#" class="header__link">Overview</a>
+            <a href="#editor" class="header__link">Overview</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">About Fork</a>
+            <a href="#about-fork" class="header__link">About Fork</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Buying Options</a>
+            <a href="#benefits" class="header__link">Buying Options</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Support</a>
+            <a href="#pricing" class="header__link">Support</a>
           </li>
         </ul>
         <button class="header__btn btn">Buy Now</button>
@@ -53,7 +57,7 @@
         </div>
       </section>
     </header>
-    <section class="section editor">
+    <section class="section editor" id="editor">
       <div class="container">
         <h2 class="editor__call">Revolutionary editor</h2>
         <p class="editor__text">
@@ -65,7 +69,7 @@
           <li class="editor__item">
             <button class="editor__button" data-action="watch">
               <svg class="editor__icon">
-                <use href="./images/editor/symbol-defs.svg#icon-eye"></use>
+                <use href="./dist/images/editor/symbol-defs.svg#icon-eye"></use>
               </svg>
               Watch <span class="editor__count">1.397</span>
             </button>
@@ -74,7 +78,7 @@
             <button class="editor__button" data-action="star">
               <svg class="editor__icon">
                 <use
-                  href="./images/editor/symbol-defs.svg#icon-star-full"
+                  href="./dist/images/editor/symbol-defs.svg#icon-star-full"
                 ></use>
               </svg>
               Star <span class="editor__count">21.038</span>
@@ -83,7 +87,9 @@
           <li class="editor__item">
             <button class="editor__button" data-action="fork">
               <svg class="editor__icon">
-                <use href="./images/editor/symbol-defs.svg#icon-fork"></use>
+                <use
+                  href="./dist/images/editor/symbol-defs.svg#icon-fork"
+                ></use>
               </svg>
               Fork <span class="editor__count">4.391</span>
             </button>
@@ -91,7 +97,7 @@
         </ul>
       </div>
     </section>
-    <section class="section benefits">
+    <section class="section benefits" id="benefits">
       <div class="container benefits__container">
         <h2 class="benefits__title">&#60;Here is what you get&#62;</h2>
         <ul class="list benefits__list">
@@ -143,24 +149,24 @@
         /> -->
         <picture class="benefits__img">
           <source
-            srcset="./images/benefits/editor_mob.jpg"
+            srcset="./dist/images/benefits/editor_mob.jpg"
             media="(max-width: 582px)"
           />
           <img
             class="benefits__pic"
-            src="./images/benefits/editor.jpg"
+            src="./dist/images/benefits/editor.jpg"
             alt="example of markup"
           />
         </picture>
       </div>
     </section>
-    <section class="about-fork">
+    <section class="about-fork" id="about-fork">
       <div class="container">
         <h2 class="section__title">People Are Talking About Fork</h2>
         <ul class="about-fork__list">
           <li class="about-fork__item">
             <img
-              src="./images/people-about-fork/smashing-magazine.png"
+              src="./dist/images/people-about-fork/smashing-magazine.png"
               class="about-fork__img"
               alt="smashing-magazine"
             />
@@ -172,7 +178,7 @@
           </li>
           <li class="about-fork__item">
             <img
-              src="./images/people-about-fork/codrops.png"
+              src="./dist/images/people-about-fork/codrops.png"
               alt="codrops"
               class="about-fork__img"
             />
@@ -183,7 +189,7 @@
           </li>
           <li class="about-fork__item">
             <img
-              src="./images/people-about-fork/W-magazine.png"
+              src="./dist/images/people-about-fork/W-magazine.png"
               class="about-fork__img"
               alt="W-magazine"
             />
@@ -195,7 +201,7 @@
           </li>
           <li class="about-fork__item">
             <img
-              src="./images/people-about-fork/pixel-buddha.png"
+              src="./dist/images/people-about-fork/pixel-buddha.png"
               class="about-fork__img"
               alt="pixel-buddha"
             />
@@ -207,7 +213,7 @@
           </li>
           <li class="about-fork__item">
             <img
-              src="./images/people-about-fork/creative-bloq.png"
+              src="./dist/images/people-about-fork/creative-bloq.png"
               class="about-fork__img"
               alt="creative-bloq"
             />
@@ -218,7 +224,7 @@
           </li>
           <li class="about-fork__item">
             <img
-              src="./images/people-about-fork/TNW.png"
+              src="./dist/images/people-about-fork/TNW.png"
               alt="TNW"
               class="about-fork__img"
             />
@@ -236,7 +242,7 @@
         </p>
       </div>
     </section>
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <div class="container">
         <h2 class="section__title pricing__title">Fork Subscription Pricing</h2>
         <ul class="pricing__list">
@@ -283,6 +289,7 @@
         </ul>
       </div>
     </section>
-    <script src="./js/script.min.js"></script>
+    <!-- <script src="./js/script.min.js"></script> -->
+    <script src="./dist/js/script.min.js"></script>
   </body>
 </html>

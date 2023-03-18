@@ -65,7 +65,9 @@
     display: inline-flex;
     align-items: center;
     border-left: 2px solid #c0c0c0;
+    min-width: 50px;
     height: 26px;
+    cursor: pointer;
   }
 
   @media screen and (max-width: $tablet-width) {
