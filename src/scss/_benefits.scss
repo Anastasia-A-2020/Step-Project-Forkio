@@ -24,7 +24,7 @@
 
   &__item {
     display: grid;
-    grid-template-columns: 135px auto;
+    grid-template-columns: 135px 406px;
 
     &:not(:last-child) {
       margin-bottom: 35px;
@@ -98,13 +98,11 @@
 
   &__img {
     position: absolute;
-    left: 50%;
+    left: 51%;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    margin-left: auto;
     bottom: 43px;
     width: 100%;
-    max-width: 560px;
   }
 
   @media screen and (max-width: $tablet-width) {
@@ -128,7 +126,10 @@
     &__item {
       margin-right: auto;
       margin-left: auto;
+      padding-right: 0;
+      padding-left: 0;
       max-width: 700px;
+      grid-template-columns: 135px auto;
     }
 
     &__heading {
