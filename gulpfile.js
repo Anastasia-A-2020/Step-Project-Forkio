@@ -54,19 +54,20 @@ function img() {
   return src(path.img.src).pipe(imagemin()).pipe(dest(path.img.dest));
 }
 function watching() {
-  watch(path.html.src, html);
+  // watch(path.html.src, html);
   watch(path.styles.src, styles);
   watch(path.scripts.src, scripts);
+  watch(["./*.html"]).on("change", browserSync.reload);
 }
 function loadPage() {
   browserSync.init({
-    server: { baseDir: distPath, port: 3000, keepalive: true },
+    server: { baseDir: "./", port: 3000, keepalive: true },
   });
 }
 function clear() {
   return del(distPath);
 }
-const build = series(clear, parallel(html, scripts, img), styles);
+const build = series(clear, parallel(scripts, img), styles);
 const dev = parallel(watching, loadPage);
 exports.build = build;
 exports.dev = dev;
